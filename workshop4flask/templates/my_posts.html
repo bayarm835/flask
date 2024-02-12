@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Publications</title>
+</head>
+<body>
+    <h1>Mes Publications</h1>
+    
+    <!-- Afficher les publications de l'utilisateur -->
+    {% for post in posts %}
+    <div>
+        <h2>{{ post['Titre'] }}</h2>
+        <p>{{ post['Contenu'] }}</p>
+        <p>{{ post['DatePublication'] }}</p>
+    </div>    
+    {% endfor %}
+</body>
+</html>

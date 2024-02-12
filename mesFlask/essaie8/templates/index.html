@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+    </head>
+<body>
+    <h1>Renseignement</h1>
+        <form action = "http://localhost:5000/page2" method="POST">
+            <p><label>Nom</label> : <input type="text" name="Nom"></p>
+            <p><label>Prénom</label> : <input type="text" name="Prénom"></p>
+            <p><label for="choix">Fait-il beau aujourd'hui ? :</label>
+            <select id="choix" name="choix">
+                <option value="reponse1">oui</option>
+                <option value="reponse2">non</option>
+                <option value="reponse3">je ne sais pas</option>
+            </select>
+            <p><input value="Valider" type="submit"></p>
+        </form>
+</body>
+</html>
